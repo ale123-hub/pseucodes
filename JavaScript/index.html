@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="wrap">
+        <h2>JavaScript</h2>
+        <ul class="tabs">
+            <li><a href="#tab1">Primer vistazo</a></li>
+            <li><a href="#tab2">Conceptos básicos</a></li>
+            <li><a href="#tab3">Condicionales y bucles</a></li>
+            <li><a href="#tab4">Funciones</a></li>
+        </ul>
+   </div>
+    <div class="contenido abrir">
+        <img src="imagenes/menu-icono.png" class="menu-bar">
+    <script src="abrir.js"></script>
+    <div class="secciones">
+      <article id="tab1">
+        <div class="wrap1">
+        <ul class="tabs1">
+          <li><a href="#tab1-1">Introducción a JavaScript</a></li>
+          <li><a href="#tab1-2">Creando su primer JavaScript</a></li>
+          <li><a href="#tab1-3">Agregar JavaScript a una página web</a></li>
+          <li><a href="#tab1-4">JavaScript externo</a></li>
+          <li><a href="#tab1-5">Comentarios en JavaScript</a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+          <article id="tab1-1">
+            <div class="contenedorDeTexto">
+              <h2>Bienvenido a JavaScript</h2>
+              <h3>JavaScript</h3> es uno de los lenguajes de programación más populares del mundo y se utiliza para agregar interactividad a páginas web, procesar datos y crear varias aplicaciones (aplicaciones móviles, aplicaciones de escritorio, juegos y más).
+              <br><br>
+              <p>Aprender los fundamentos de un idioma le permitirá crear el programa que desee, ya sea del lado del cliente o del lado del servidor.</p><br><br>
+              <center><img src="imagenes/js.png" alt=""></center>
+          </div>
+          </article>
+          <article id="tab1-2">
+              <ul class="tabs2">
+                <li><a href="#tab1-2-1">►</a></li>
+                <li><a href="#tab1-2-2">►</a></li>
+                <li><a href="#tab1-2-3">►</a></li>
+                <li><a href="#tab1-2-4">►</a></li>
+            </ul>
+            <div class="secciones2">
+              <article id="tab1-2-1">
+                <div class="contenedorDeTexto">
+                  <h2>Tu primer JavaScript</h2>
+                    Comencemos agregando JavaScript a una página web.
+                    JavaScript en la web vive dentro del documento HTML .
+                    En HTML, el código JavaScript debe insertarse entre las etiquetas <h3>&lt;script&gt;</h3> y <h3>&lt/script&gt;</h3>:  
+                    <br><br>
+                    <img src="imagenes/script.PNG" alt=""><br><br>
+                    JavaScript se puede colocar en las secciones <h3>&lt;body&gt;</h3> y <h3>&lt;head&gt;</h3> de la página HTML.
+                    En el siguiente ejemplo, lo colocamos dentro de la etiqueta <h3>&lt;body&gt;</h3>.
+                    <br><br>
+                    <img src="imagenes/script_body.PNG" alt=""><br><br>
+                    <p>Recuerde que la secuencia de comandos, que se coloca en la sección &lt;head&gt;, se ejecutará antes de que se ejecute &lt;body&gt;. Si desea obtener elementos en el &lt;body&gt;, es una buena idea colocar su secuencia de comandos al final de la etiqueta del &lt;body&gt;.</p>
+                </div>
+              </article>
+
+              <article id="tab1-2-2">
+                <div class="contenedorDeTexto">
+                  <h2>Salida</h2>
+                  Usemos JavaScript para imprimir <h3>"Hola Mundo"</h3> en el navegador.
+                  <br><br>
+                  <img src="imagenes/hola_mundo.png" alt=""><br><br>
+                  La función <h3>document.write ()</h3> escribe una cadena en nuestro documento HTML. Esta función se puede utilizar para escribir texto, HTML o ambos.
+                  El código anterior muestra el siguiente resultado:
+                  <br><br>
+                  <img src="imagenes/hola_mundo_mostrar1.png" alt=""><br><br>
+                  <p>El método document.write () debe usarse solo para pruebas. Otros mecanismos de salida aparecen en las próximas lecciones.</p>
+                </div>
+              </article>
+
+              <article id="tab1-2-3">
+                <div class="contenedorDeTexto">
+                  <h2>Dar formato al texto</h2>
+                  Al igual que en HTML, podemos usar etiquetas HTML para dar formato al texto en JavaScript.
+                  Por ejemplo, podemos generar el texto como un encabezado.
+                  <br><br>
+                  <img src="imagenes/hola_mundo_h1.PNG" alt=""><br><br>
+                  <strong>Resultado:</strong> 
+                  <br><br>
+                  <img src="imagenes/hola_mundo_mostrar_h1.PNG" alt=""><br><br>
+                  <p>Puede generar casi todo en la página web utilizando JavaScript. Muchos marcos de JavaScript utilizan esto para crear páginas HTML.</p>       
+                </div>
+              </article>
+
+              <article id="tab1-2-4">
+                <div class="contenedorDeTexto">
+                  <h2>Salida a consola</h2>
+                  Mientras que <h3>document.write ()</h3> se usa para escribir la salida HTML, la función <h3>console.log ()</h3>  se usa para realizar la salida a la consola web.
+                  La consola se utiliza con fines de prueba y depuración.
+                  Es parte del navegador web y le permite registrar mensajes, ejecutar código JavaScript y ver errores y advertencias.
+                  Los desarrolladores utilizan principalmente la consola para probar su código JavaScript.
+                  <br><br>
+                  <strong>Por ejemplo :</strong>  <br><br>
+                  <img src="imagenes/hola_mundo_consola.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/hola_mundo_mostrar_consola.PNG" alt="">
+                </div>
+              </article>
+            </div>
+
+          </article>
+          <article id="tab1-3">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-3-1">►</a></li>
+                <li><a href="#tab1-3-2">►</a></li>
+                <li><a href="#tab1-3-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-3-1">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript en &lt;head&gt;</h2>
+                    Puede colocar cualquier número de scripts en un documento HTML.
+                    Normalmente, la etiqueta de secuencia de comandos se coloca en el encabezado del documento HTML:
+                    <br><br>
+                    <img src="imagenes/script_en_head.PNG" alt=""><br><br>
+                    <p>También hay una etiqueta &lt;noscript&gt;. Su contenido se mostrará si el navegador del cliente no admite scripts JS.</p>
+                </div>
+              </article>
+
+              <article id="tab1-3-2">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript en &lt;body&gt;</h2>
+                  Alternativamente, incluya JavaScript en la etiqueta &lt;body&gt;.
+                  <br><br>
+                  <img src="imagenes/script_body2.PNG" alt=""><br><br>
+                  <p>Es una buena idea colocar los scripts en la parte inferior del elemento &lt;body&gt;.
+                    Esto puede mejorar la carga de la página, porque la visualización de HTML no está bloqueada por la carga de scripts.</p>
+                </div>
+              </article>
+
+              <article id="tab1-3-3">
+                <div class="contenedorDeTexto">
+                  <h2>La etiqueta &lt;script&gt;</h2>
+                  La etiqueta &lt;script&gt; puede tener dos atributos, <h3>language</h3> y <h3>type</h3>, que especifican el tipo de script:
+                  <br><br>
+                  <img src="imagenes/etiqueta_script.PNG" alt=""><br><br>
+                  <p>El atributo "language" está obsoleto y no debe utilizarse. <br>
+                    En el siguiente ejemplo, creamos un cuadro de alerta dentro de la etiqueta del script, usando la función alert ().</p>
+                    <br><br>
+                    <img src="imagenes/script_alert.PNG" alt=""><br><br>
+                    <strong>Resultado:</strong> 
+                    <br><br>
+                    <img src="imagenes/alerta_mostrar.png" alt="">
+                </div>
+              </article>
+            </div>
+
+          </article>
+
+          <article id="tab1-4">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-4-1">►</a></li>
+                <li><a href="#tab1-4-2">►</a></li>
+                <li><a href="#tab1-4-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-4-1">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript externo</h2>
+                  Los scripts también se pueden colocar en archivos externos. <br>
+                  Los scripts externos son útiles y prácticos cuando se usa el mismo código en varias páginas web diferentes. <br>
+                  Los archivos JavaScript tienen la extensión de archivo .js. <br><br>
+                  A continuación, hemos creado un nuevo archivo de texto , y lo llamamos demo.js.
+                    <br><br>
+                  <img src="imagenes/archivo_js.png" alt=""><br><br>
+                  <p>Tener scripts JS en archivos separados hace que su código sea mucho más legible y claro.</p>
+                </div>
+              </article>
+
+              <article id="tab1-4-2">
+                <div class="contenedorDeTexto">
+                  <h2>Utilizar JavaScript externo en HTML</h2>
+                  Para utilizar un script externo, ponga el nombre del archivo de script en el atributo src (fuente) de la etiqueta &lt;script&gt;.
+                  <br>
+                  Aquí hay un ejemplo:
+                  <br><br>
+                  <img src="imagenes/script_en_html.PNG" alt=""><br><br>
+                  Su archivo demo.js incluye el siguiente JavaScript:
+                  <br><br>
+                  <img src="imagenes/alert_en_script.PNG" alt="">
+                  <br>
+                  <p>Los scripts externos no pueden contener etiquetas &lt;script&gt;</p>
+                </div>
+              </article>
+
+              <article id="tab1-4-3">
+                <div class="contenedorDeTexto">
+                  <h2>Funcionalidad JavaScript externo</h2>
+                  El resultado del ejemplo anterior será idéntico al resultado cuando incluimos el JavaScript dentro del archivo HTML.
+                  <br><br>
+                  <img src="imagenes/alerta_mostrar.png" alt=""><br><br>
+                  Puede colocar una referencia de script externo en &lt;head&gt; o &lt;body&gt;, lo que prefiera. <br>
+                  El script se comportará como si estuviera ubicado exactamente donde se encuentra la etiqueta &lt;script&gt;.
+                  <p>Colocar un JavaScript en un archivo externo tiene las siguientes ventajas: <br>
+                    - Separa HTML y código. <br>
+                    - Hace que HTML y JavaScript sean más fáciles de leer y mantener. <br>
+                    - Los archivos JavaScript en caché pueden acelerar la carga de páginas.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab1-5">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-5-1">►</a></li>
+                <li><a href="#tab1-5-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-5-1">
+                <div class="contenedorDeTexto">
+                  <h2>Comentarios de una línea JavaScript</h2>
+                  No todas las declaraciones de JavaScript se "ejecutan". <br>
+                  El código después de una doble barra <h3>//</h3>, o entre <h3>/ * </h3>y <h3>* /</h3>, se trata como un comentario. <br>
+                  Los comentarios se ignoran y no se ejecutan.
+                  <br><br>
+                  Los comentarios de una sola línea utilizan barras dobles.
+                  <br><br>
+                  <img src="imagenes/comentario_una_linea.PNG" alt=""><br><br>
+                  <strong>Resultado:</strong> <br><br>
+                  <img src="imagenes/alerta_mostrar.png" alt="">
+                  <p>Es una buena idea hacer un comentario sobre la lógica de las funciones grandes para hacer que su código sea más legible para otros.</p>
+                </div>
+              </article>
+
+              <article id="tab1-5-2">
+                <div class="contenedorDeTexto">
+                  <h2>Comentarios de varias líneas</h2>
+                  Todo lo que escriba entre <h3>/ * </h3>y <h3>* /</h3> se considerará un comentario de varias líneas.
+                  <br>
+                  Aquí hay un ejemplo:
+                  <br><br>
+                  <img src="imagenes/comentario_varias_lineas.PNG" alt=""><br><br>
+                  <p>Los comentarios se utilizan para describir y explicar lo que hace el código.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </article>
+
+
+
+      <article id="tab2">
+        <div class="wrap2">
+          <ul class="tabs1">
+            <li><a href="#tab2-1">Variables</a></li>
+            <li><a href="#tab2-2">Tipos de datos</a></li>
+            <li><a href="#tab2-3">Operadores matemáticos</a></li>
+            <li><a href="#tab2-4">Operadores de asignación</a></li>
+            <li><a href="#tab2-5">Operadores de comparación</a></li>
+            <li><a href="#tab2-6">Operadores lógicos o booleanos</a></li>
+            <li><a href="#tab2-7">Operadores de cadenas</a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+          <article id="tab2-1">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-1-1">►</a></li>
+                <li><a href="#tab2-1-2">►</a></li>
+                <li><a href="#tab2-1-3">►</a></li>
+                <li><a href="#tab2-1-4">►</a></li>
+                <li><a href="#tab2-1-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-1-1">
+                <div class="contenedorDeTexto">
+                  <h2>Variables</h2>
+                  Las variables son contenedores para almacenar valores de datos. El valor de una variable puede cambiar a lo largo del programa.
+                  Utilice la palabra clave var para declarar una variable :
+                  <br><br>
+                  <img src="imagenes/variable.png" alt=""><br><br>
+                  En el ejemplo anterior, el valor 10 se asigna a la variable x . <br><br>
+                  <p>JavaScript distingue entre mayúsculas y minúsculas. Por ejemplo, las variables primerNombre y primernombre , son dos variables diferentes.</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-2">
+                <div class="contenedorDeTexto">
+                  <h2>El signo igual</h2>
+                  En JavaScript, el signo igual (=) se denomina operador de " asignación ", en lugar de operador "igual a".
+                  Por ejemplo, x = y asignará el valor de y a x .                
+                  <br><br>
+                  <p>Una variable se puede declarar sin valor. El valor puede requerir algún cálculo, algo que se proporcionará más adelante, como la entrada del usuario. <br>
+                    Una variable declarada sin un valor tendrá el valor indefinido .</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-3">
+                <div class="contenedorDeTexto">
+                  <h2>Usando Variables</h2>
+                  Asignaremos un valor a una variable y lo mostraremos en el navegador.              
+                  <br><br>
+                  <img src="imagenes/mostrar_variable.png" alt=""> <br><br>
+                  <strong>Resultado:</strong> <br><br>
+                  <img src="imagenes/variable_navegador.png" alt=""><br><br>
+                  El uso de variables es útil de muchas formas. Puede tener mil líneas de código que pueden incluir la variable x. Cuando cambie el valor de x una vez , se cambiará automáticamente en todos los lugares donde lo utilizó.
+                  <p>Cada "instrucción" escrita se llama declaración . Las declaraciones de JavaScript están separadas por punto y coma .</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-4">
+                <div class="contenedorDeTexto">
+                  <h2>Nombrar variables</h2>
+                  Los nombres de las variables de JavaScript distinguen entre mayúsculas y minúsculas. <br>
+                  En el siguiente ejemplo, cambiamos x a mayúsculas: <br><br>           
+                  <img src="imagenes/cambio_variable.png" alt=""><br><br>
+                  Este código no dará como resultado ninguna salida, ya que x y X son dos variables diferentes. <br><br>
+                  <strong>Reglas de nomenclatura:</strong> <br>
+                  - El primer carácter debe ser una letra, un guión bajo (_) o un signo de dólar ($). Los caracteres siguientes pueden ser letras, dígitos, guiones bajos o signos de dólar. <br>
+                  - No se permiten números como primer carácter. <br>
+                  - Los nombres de las variables no pueden incluir un operador matemático o lógico en el nombre. Por ejemplo, 2 * algo o esto + aquello; <br>
+                  - Los nombres de JavaScript no deben contener espacios. <br><br>
+                  <p>Los guiones no están permitidos en JavaScript. Está reservado para restas.</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-5">
+                <div class="contenedorDeTexto">
+                  <h2>Nombrar variables</h2>
+                  Hay algunas otras reglas a seguir al nombrar sus variables de JavaScript: <br>
+                  - No debe usar ningún símbolo especial , como my # num, num% , etc. <br>
+                  - Asegúrese de no usar ninguna de las siguientes palabras reservadas de JavaScript.
+                  <br><br>
+                  <img src="imagenes/nombres_de_variables.png" alt=""><br><br>
+                  <p>Cuando se familiarice con JavaScript, recordar estas palabras clave será mucho más fácil.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-2">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-2-1">►</a></li>
+                <li><a href="#tab2-2-2">►</a></li>
+                <li><a href="#tab2-2-3">►</a></li>
+                <li><a href="#tab2-2-4">►</a></li>
+                <li><a href="#tab2-2-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-2-1">
+                <div class="contenedorDeTexto">
+                  <h2>Tipos de datos</h2>
+                  El término tipo de datos se refiere a los tipos de valores con los que puede trabajar un programa. Las variables de JavaScript pueden contener muchos tipos de datos, como números , cadenas , matrices y más.
+                  <br><br>
+                  A diferencia de muchos otros lenguajes de programación, JavaScript no define diferentes tipos de números, como enteros, cortos, largos, de punto flotante, etc. Losnúmeros de JavaScript se pueden escribir con o sin decimales.
+                  <br><br>
+                  <img src="imagenes/variables_sin_decimales.png" alt=""><br><br>
+                  <p>Esta variable se puede cambiar fácilmente a otros tipos asignándole cualquier otro valor de tipo de datos, como num = 'alguna cadena aleatoria '.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-2">
+                <div class="contenedorDeTexto">
+                  <h2>Números con decimales</h2>
+                  Los números de JavaScript también pueden tener decimales.              
+                  <br><br>
+                  <img src="imagenes/variables_con_decimales.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_numero_con_decimal.png" alt="">
+                  <p>Los números de JavaScript siempre se almacenan como números de coma flotante de doble precisión.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-3">
+                <div class="contenedorDeTexto">
+                  <h2>Cadenas</h2>
+                  Las cadenas o strings de JavaScript se utilizan para almacenar y manipular texto. <br>
+                  Una cadena puede ser cualquier texto que aparezca entre comillas . Puede utilizar comillas simples o dobles.
+                  <br><br>
+                  <img src="imagenes/strings1.png" alt=""> <br><br>
+                  Puede usar comillas dentro de una cadena , siempre que no coincidan con las comillas que rodean la cadena. <br><br>
+                  <img src="imagenes/strings2.png" alt=""><br><br>
+                  <p>Puede obtener comillas dobles dentro de comillas dobles utilizando el carácter de escape como este: \ "o \ 'dentro de comillas simples.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-4">
+                <div class="contenedorDeTexto">
+                  <h2>Cadenas</h2>
+                  Como las cadenas deben escribirse entre comillas, deben manejarse las comillas dentro de la cadena . El carácter de escape de barra invertida () convierte los caracteres especiales en caracteres de cadena . <br><br>           
+                  <img src="imagenes/variable_saludar.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_variable_saludar.png" alt=""><br><br>
+                  El carácter de escape () también se puede utilizar para insertar otros caracteres especiales en una cadena. <br>
+                  Estos caracteres especiales se pueden agregar a una cadena de texto usando el signo de barra invertida. <br><br>
+                  <img src="imagenes/caracteres_de _escape.png" alt=""><br><br>
+                  <p>Si comienza una cadena con una comilla simple, también debe terminarla con una comilla simple. La misma regla se aplica a las comillas dobles. De lo contrario, JavaScript se confundirá.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-5">
+                <div class="contenedorDeTexto">
+                  <h2>Datos Booleanos</h2>
+                  En JavaScript booleano, puede tener uno de dos valores, verdadero o falso .
+                  Éstos son útiles cuando necesita un tipo de datos que solo puede tener uno de dos valores, como Sí / No, Activado / Desactivado, Verdadero / Falso. <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/variable_booleana.png" alt=""><br><br>
+                  <p>El valor booleano de 0 (cero), nulo , indefinido , cadena vacía es falso .
+                    Todo lo que tenga un valor "real" es cierto.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-3">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-3-1">►</a></li>
+                <li><a href="#tab2-3-2">►</a></li>
+                <li><a href="#tab2-3-3">►</a></li>
+                <li><a href="#tab2-3-4">►</a></li>
+                <li><a href="#tab2-3-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-3-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores aritméticos</h2>
+                  Los operadores aritméticos realizan funciones aritméticas en números (literales o variables).
+                  <br><br>
+                  <img src="imagenes/operadores_aritmeticos.png" alt=""><br><br>
+                  En el siguiente ejemplo, el operador de suma se usa para determinar la suma de dos números.
+                  <br><br>
+                  <img src="imagenes/suma.png" alt=""><br><br>
+                  Puede sumar tantos números o variables como desee o necesite. <br><br>
+                  <img src="imagenes/suma2.png" alt=""> <br><br>
+                  <p>Puede obtener el resultado de una expresión de cadena utilizando la función eval (), que toma un argumento de expresión de cadena como eval ("10 * 20 + 8") y devuelve el resultado. Si el argumento está vacío, devuelve undefined.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-2">
+                <div class="contenedorDeTexto">
+                  <h2>Multiplicación</h2>
+                  El operador de multiplicación (*) multiplica un número por el otro.            
+                  <br><br>
+                  <img src="imagenes/multiplicacion.png" alt=""><br><br>
+                  <p>10 '5' o '10' '5' dan el mismo resultado. Multiplicar un número con valores de cadena como 'aprendiendo' * 5 devuelve NaN (No es un número).</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-3">
+                <div class="contenedorDeTexto">
+                  <h2>División</h2>
+                  El operador / se utiliza para realizar operaciones de división:
+                  <br><br>
+                  <img src="imagenes/division.png" alt=""> <br><br>
+                  <p>Recuerde manejar los casos en los que podría haber una división entre 0.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-4">
+                <div class="contenedorDeTexto">
+                  <h2>Módulo</h2>
+                  El operador de módulo (%) devuelve el resto de la división (lo que queda).<br><br>           
+                  <img src="imagenes/modulo.png" alt=""><br><br>
+                  <p>En JavaScript, el operador de módulo se usa no solo en números enteros, sino también en números de punto flotante.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-5">
+                <div class="contenedorDeTexto">
+                  <h2>Incremento y decremento</h2>
+                  <strong>Incremento ++</strong> <br>
+                  El operador de incremento incrementa el valor numérico de su operando en uno. Si se coloca antes del operando, devuelve el valor incrementado. Si se coloca después del operando, devuelve el valor original y luego incrementa el operando. <br><br>
+                  <strong>Decremento --</strong> <br>
+                  El operador de decremento reduce el valor numérico de su operando en uno. Si se coloca antes del operando, devuelve el valor decrementado. Si se coloca después del operando, devuelve el valor original y luego disminuye el operando. <br><br>
+                  <strong>Algunos ejemplos:</strong><br><br>
+                  <img src="imagenes/ejemplos_incremento_decremento.png" alt=""><br><br>
+                  <p>Como en las matemáticas escolares, puede cambiar el orden de las operaciones aritméticas utilizando paréntesis. <br>
+                   <strong>Ejemplo:</strong> var x = (100 + 50) * 3;</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-4">
+            <div class="contenedorDeTexto">
+              <h2>Operadores de Asignación</h2>
+              Los operadores de asignación asignan valores a las variables de JavaScript.
+              <br><br>
+              <img src="imagenes/operadores_de_asignacion.png" alt=""><br><br>
+              <p>Puede utilizar varios operadores de asignación en una línea, como x - = y + = 9.</p>
+          </div>
+          </article>
+
+          <article id="tab2-5">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-5-1">►</a></li>
+                <li><a href="#tab2-5-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-5-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores de comparación</h2>
+                  Los operadores de comparación se utilizan en declaraciones lógicas para determinar la igualdad o diferencia entre variables o valores. Devuelven verdadero o falso. <br><br>
+                  El operador igual a (==) comprueba si los valores de los operandos son iguales. <br><br>
+                  <img src="imagenes/operador_de_comparacion.png" alt=""><br><br>
+                  <p>Puede comprobar todo tipo de datos; los operadores de comparación siempre devuelven verdadero o falso.</p>
+                </div>
+              </article>
+
+              <article id="tab2-5-2">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores de comparación</h2>
+                  La siguiente tabla explica los operadores de comparación.          
+                  <br><br>
+                  <img src="imagenes/tabla_operadores_de_comparacion.png" alt=""><br><br>
+                  <p>Cuando utilice operadores, asegúrese de que los argumentos sean del mismo tipo de datos; los números deben compararse con números, cadenas con cadenas, etc.</p>
+                </div>
+              </article>
+
+            </div>
+          </article>
+
+          <article id="tab2-6">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-6-1">►</a></li>
+                <li><a href="#tab2-6-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-6-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores lógicos</h2>
+                  Los operadores lógicos , también conocidos como operadores booleanos , evalúan la expresión y devuelven verdadero o falso. <br><br>
+                  La siguiente tabla explica los operadores lógicos <strong>( AND, OR, NOT )</strong>. <br><br>
+                  <img src="imagenes/tabla_operadores_logicos.png" alt="" width="600px" height="300px"><br><br>
+                  <p>Puede comprobar todo tipo de datos; los operadores de comparación siempre devuelven verdadero o falso.</p>
+                </div>
+              </article>
+
+              <article id="tab2-6-2">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores lógicos</h2>
+                  En el siguiente ejemplo, hemos conectado dos expresiones booleanas con el operador <strong>AND</strong>.        
+                  <br><br>
+                  <img src="imagenes/and.png" alt=""><br><br>
+                  Para que esta expresión sea verdadera , ambas condiciones deben ser verdaderas. <br>
+                  - La primera condición determina si 4 es mayor que 2, lo cual es cierto. <br>
+                  - La segunda condición determina si 10 es menor que 15, lo cual también es cierto. <br><br>
+                  Con base en estos resultados, se encuentra que toda la expresión es verdadera. <br><br>
+                  <h3>Operador condicional (Ternary)</h3> <br>
+                  Otro operador condicional de JavaScript asigna un valor a una variable, según alguna condición. <br>
+                  <strong>Sintaxis:</strong> <br><br>
+                  <img src="imagenes/sintaxis_ternary.png" alt=""> <br><br>
+                  <strong>Por ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_ternary.png" alt=""><br><br>
+                  Si la variable edad es un valor por debajo de 18, el valor de la variable adulto será "Demasiado joven". De lo contrario, el valor adulto será "Lo suficientemente mayor". <br><br>
+                  <p>Los operadores lógicos le permiten conectar tantas expresiones como desee.</p>
+                </div>
+              </article>
+
+            </div>
+          </article>
+
+          <article id="tab2-7">
+            <div class="contenedorDeTexto">
+              <h2>Operadores de cadenas</h2>
+              El operador más útil para cadenas es la concatenación , representada por el signo +. <br>
+              La concatenación se puede utilizar para construir cadenas uniendo varias cadenas o uniendo cadenas con otros tipos: <br><br>
+              <img src="imagenes/concatenacion.png" alt=""><br><br>
+              El ejemplo anterior declara e inicializa dos variables de cadena y luego las concatena. <br><br>
+              <img src="imagenes/mostrar_concatenacion.png" alt=""><br><br>
+              <p>Los números entre comillas se tratan como cadenas: "42" no es el número 42, es una cadena que incluye dos caracteres, 4 y 2.</p>
+          </div>
+          </article>
+        </div>
+      </article>
+
+
+
+      <article id="tab3">
+        <div class="wrap4">
+          <ul class="tabs1">
+            <li><a href="#slide">La declaración if</a></li>
+            <li><a href="#slide">La declaración else</a></li>
+            <li><a href="#slide">La declaración else if </a></li>
+            <li><a href="#slide">La declaración de cambio</a></li>
+            <li><a href="#slide">El bucle for</a></li>
+            <li><a href="#slide">El bucle while</a></li>
+            <li><a href="#slide">El bucle Do ... While</a></li>
+            <li><a href="#slide">Romper y continuar</a></li>
+        </ul>
+      </div>
+      <div class="secciones1">
+
+      </div>
+      </article>
+
+
+      <article id="tab4">
+        <div class="wrap4">
+          <ul class="tabs1">
+            <li><a href="#slide">Usar-Definir Funciones</a></li>
+            <li><a href="#slide">Parámetros de función</a></li>
+            <li><a href="#slide">Usar varios parámetros con funciones</a></li>
+            <li><a href="#slide">La declaración de devolución </a></li>
+            <li><a href="#slide">Alert, Prompt, Confirm </a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+
+        </div>
+      </article>
+    </div>
+</div>
+</body>
+</html>
