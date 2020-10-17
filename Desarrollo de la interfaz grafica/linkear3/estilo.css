@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: url('vx3.jpg') 50% 50% no-repeat;
+    background: url('vx4.jpg') 50% 50% no-repeat;
     background-size: cover;
  }
  
@@ -16,7 +16,7 @@ body {
  width:980px;
  margin:0px auto;
  padding:0px;
- height:85px;
+ height:80px;
 }
 #header li
 {
@@ -29,23 +29,13 @@ body {
 {
  margin-top:15px;
 }
-#header #sitename a
-{
- color:white;
- text-decoration:none;
- font-size:30px;
- font-weight:900;
-}
+
 #header form
 {
- margin-top:15px;
+ margin-top:10px;
  float:right;
 }
-#header form li
-{
- font-size:13px;
- margin-left:15px;
-}
+
 #header form input[type="text"]
 {
  margin-top:3px;
@@ -97,15 +87,14 @@ body {
 {
  height:25px;
  margin-top:20px;
- background-color:#67ae55;
+ background-color: #1728c048; 
  color:white;
- border:1px solid #578843;
+ border:1px solid #00000098;
 }
 #wrapper
 {
  margin:0 auto;
- padding:0px;
- text-align:center;
+ padding:0px; 
  width:980px;
 }
 #wrapper div
@@ -119,27 +108,17 @@ body {
  width:590px;
  text-align:left;
 }
-#wrapper #div1 p
-{
- font-size:20px;
- font-family:arial;
- font-weight:bold;
- margin:0px;
- color:#ffffff;
- position: relative;
- top: -1px;
- width: 400px;
-}
+
 #wrapper #div2
 {
- margin-top: -50px;
- width:390px;
- text-align:left;
+ margin-top: 0px;
+ width:360px;
+ text-align:right;
 }
 #wrapper #div2 h1
 {
  margin:0px;
- font-size:37px;
+ font-size:27px;
  color:#ffffff;
 }
 
@@ -185,10 +164,10 @@ body {
  margin-bottom: 10px;
  font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
  font-weight: bold !important;
- background: linear-gradient(#67ae55, #578843);
- background-color: #69a74e;
- box-shadow: inset 0 1px 1px #a4e388;
- border-color: #3b6e22 #3b6e22 #2c5115;
+ background: linear-gradient(#01154d49, #0041f35b);
+ background-color: #090b798a;
+ box-shadow: inset 0 1px 1px #060f5fa1;
+ border-color: #22276e #1b3069de #161616e7;
  border: 1px solid;
  border-radius: 5px;
  color: #fff;
