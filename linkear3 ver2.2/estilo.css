@@ -1,0 +1,180 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url('vx4.jpg') 50% 50% no-repeat;
+    background-size: cover;
+ }
+ 
+#header_wrapper
+{
+ width:100%;
+ min-width:100px;
+ background-color: rgba(7, 41, 92, 0.623);
+}
+#header
+{
+ width:980px;
+ margin:0px auto;
+ padding:0px;
+ height:80px;
+}
+#header li
+{
+ list-style-type:none;
+ float:left;
+ text-align:left;
+ color:white;
+}
+#header #sitename
+{
+ margin-top:15px;
+}
+
+#header form
+{
+ margin-top:10px;
+ float:right;
+}
+
+#header form input[type="text"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid;
+ height:30px;
+ padding-left:3px;
+}
+#header form input[type="password"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid;
+ height:30px;
+ padding-left:3px;
+}
+#fechaNacimiento
+{
+    font-size: 15px;
+    border:1px solid;
+    height:25px; 
+    width: 150px;
+    margin-left: 190px;
+    border-radius: 5px;
+}
+#sexo
+{
+    font-size: 15px;
+    margin-top:8px;
+    border:1px solid;
+    height:25px; 
+    width: 150px;
+    margin-left: 190px;
+    border-radius: 5px;
+}
+#paisResidencia
+{
+    font-size: 15px;
+    margin-top:8px;
+    border:1px solid;
+    height:25px; 
+    width: 150px;
+    margin-left: 190px;
+    border-radius: 5px;
+}
+#header form input[type="submit"]
+{
+ height:25px;
+ margin-top:20px;
+ background-color: #1728c048; 
+ color:white;
+ border:1px solid #00000098;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px; 
+ width:980px;
+}
+#wrapper div
+{
+ float:left;
+ font-family: helvetica, arial, sans-serif;
+}
+#wrapper #div1
+{
+ margin-top:80px;
+ width:590px;
+ text-align:left;
+}
+
+#wrapper #div2
+{
+ margin-top: 0px;
+ width:360px;
+ text-align:right;
+}
+#wrapper #div2 h1
+{
+ margin:0px;
+ font-size:27px;
+ color:#ffffff;
+}
+
+#wrapper #div2 li
+{
+ list-style-type:none;
+ margin-top:10px;
+}
+#wrapper #div2 li #nombre
+{
+ width:49%;
+}
+#wrapper #div2 li #apellido
+{
+ margin-left:2%;
+ width:49%;
+}
+#wrapper #div2 li input[type="text"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li input[type="password"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li input[type="submit"]
+{
+ width:200px;
+ height:45px;
+ text-align:center;
+ font-size:19px;
+ margin-top: 25px;
+ margin-bottom: 10px;
+ font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+ font-weight: bold !important;
+ background: linear-gradient(#01154d49, #0041f35b);
+ background-color: #090b798a;
+ box-shadow: inset 0 1px 1px #060f5fa1;
+ border-color: #22276e #1b3069de #161616e7;
+ border: 1px solid;
+ border-radius: 5px;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+
