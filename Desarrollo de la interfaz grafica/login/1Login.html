@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="icon" type="icon" href="imagenes/logotipo.jpeg" />
+<link href="estilo.css" type="text/css" rel="stylesheet"/>
+<title>Pseudo Codes Company - Login</title>
+</head>
+<body>
+<div id="header_wrapper">
+ <div id="header">
+ <li id="sitename"><h2>Pseudo Codes Company</h2></li>   
+ <form action="post">
+ <li>Nombre de usuario<br><input type="text" name="usuario"></li>
+ <li>Clave<br><input type="password" name="clave"><br>
+ <li><input type="submit" name="ingresar" value="Ingresar"></li>
+ <script>
+       document.getElementById('usuario').addEventListener('keyup', recuperar => 
+       console.log(recuperar.target.value))
+       document.getElementById('clave').addEventListener('keyup', passwd => 
+       console.log(passwd.target.value))
+ </script>
+ </form>
+ </div>
+</div>
+<div id="wrapper">
+<div id="div1">
+<br>
+<h1 id="titulo">Bienvenidos</h1>
+<p>Aqui encontraras metodos de higiene y prevención ante el Covid19 a través de medicinas tradicionales. </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="div2">
+<h1>Registro</h1>
+<li><input type="text" placeholder="Nombre" id="nombre"><input type="text" placeholder="Apellido" id="apellido"></li>
+<li><input type="text" placeholder="Correo"></li>
+<li><input type="password" placeholder="Clave"></li>
+<p id="ubicacion">Sexo</p>
+<select name="sexo" id="sexo">
+      <option value="Hombre">Hombre</option>
+      <option value="Mujer">Mujer</option>
+      <option value="Otro">Otro</option>
+    </select>
+<p id="ubicacion">Fecha de nacimiento</p>
+<li><input type="date" id="edad" name="trip-start" value="" min="1900-01-01" max="2020-01-01"></li>
+<p id="ubicacion">País de Residencia</p>
+<select name="sexo" id="sexo">
+      <option value="Argentina">Argentina</option>
+      <option value="Belice">Belice</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Chile">Chile</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Guyana Francesa">Guyana Francesa</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Panamá">Panamá</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Perú">Perú</option>
+      <option value="Suriname">Suriname</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Venezuela">Venezuela</option>
+    </select>
+<li><input type="submit" value="Unirse"></li>
+</div>
+<div id="enlaceinicio">
+      <a class="nav-link" href="index.html">Regresar al inicio</a> 
+</div>   
+</body>
+</html>
