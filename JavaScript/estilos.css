@@ -150,6 +150,7 @@ body{
 
 .contenedorDeTexto{
   background: rgb(88, 139, 187);
+  width: 748px;
   height: 520px;
   margin: auto;
   padding-top: 0;
