@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h2>JavaScript</h2>
+        <ul class="tabs">
+            <li><a >Primer vistazo</a></li>
+            <li><a href="../Conceptos básicos/variables.html" >Conceptos básicos</a></li>
+            <li><a href="../Condicionales y bucles/La declaración if.html">Condicionales y bucles</a></li>
+            <li><a href="../Funciones/Funciones definidas por el usuario.html">Funciones</a></li>
+        </ul>
+   </div>
+    <div class="contenido abrir">
+        <img src="../../imagenes/menu-icono.png" class="menu-bar">
+    <script src="../../abrir.js"></script>
+    <div class="secciones">
+
+        <ul class="tabs1">
+          <li><a href="./Bienvenido a JavaScript.html">Introducción a JavaScript</a></li>
+          <li><a href="./Creando su primer JavaScript.html">Creando su primer JavaScript</a></li>
+          <li><a href="./Agregar JavaScript a una página web.html">Agregar JavaScript a una página web</a></li>
+          <li><a >JavaScript externo</a></li>
+          <li><a href="./Comentarios en JavaScript.html">Comentarios en JavaScript</a></li>
+        </ul>
+        
+        <div class="secciones1">
+            <article id="tab1-4">
+                <div class="">
+                  <ul class="tabs2">
+                    <li><a href="#tab1-4-1">►</a></li>
+                    <li><a href="#tab1-4-2">►</a></li>
+                    <li><a href="#tab1-4-3">►</a></li>
+                </ul>
+                </div>
+                <div class="secciones2">
+                  <article id="tab1-4-1">
+                    <div class="contenedorDeTexto">
+                      <h2>JavaScript externo</h2>
+                      Los scripts también se pueden colocar en archivos externos. <br>
+                      Los scripts externos son útiles y prácticos cuando se usa el mismo código en varias páginas web diferentes. <br>
+                      Los archivos JavaScript tienen la extensión de archivo .js. <br><br>
+                      A continuación, hemos creado un nuevo archivo de texto , y lo llamamos demo.js.
+                        <br><br>
+                      <img src="../../imagenes/archivo_js.png" alt=""><br><br>
+                      <p>Tener scripts JS en archivos separados hace que su código sea mucho más legible y claro.</p>
+                    </div>
+                  </article>
+    
+                  <article id="tab1-4-2">
+                    <div class="contenedorDeTexto">
+                      <h2>Utilizar JavaScript externo en HTML</h2>
+                      Para utilizar un script externo, ponga el nombre del archivo de script en el atributo src (fuente) de la etiqueta &lt;script&gt;.
+                      <br>
+                      Aquí hay un ejemplo:
+                      <br><br>
+                      <img src="../../imagenes/script_en_html.PNG" alt=""><br><br>
+                      Su archivo demo.js incluye el siguiente JavaScript:
+                      <br><br>
+                      <img src="../../imagenes/alert_en_script.PNG" alt="">
+                      <br>
+                      <p>Los scripts externos no pueden contener etiquetas &lt;script&gt;</p>
+                    </div>
+                  </article>
+    
+                  <article id="tab1-4-3">
+                    <div class="contenedorDeTexto">
+                      <h2>Funcionalidad JavaScript externo</h2>
+                      El resultado del ejemplo anterior será idéntico al resultado cuando incluimos el JavaScript dentro del archivo HTML.
+                      <br><br>
+                      <img src="../../imagenes/alerta_mostrar.png" alt=""><br><br>
+                      Puede colocar una referencia de script externo en &lt;head&gt; o &lt;body&gt;, lo que prefiera. <br>
+                      El script se comportará como si estuviera ubicado exactamente donde se encuentra la etiqueta &lt;script&gt;.
+                      <p>Colocar un JavaScript en un archivo externo tiene las siguientes ventajas: <br>
+                        - Separa HTML y código. <br>
+                        - Hace que HTML y JavaScript sean más fáciles de leer y mantener. <br>
+                        - Los archivos JavaScript en caché pueden acelerar la carga de páginas.</p>
+                    </div>
+                  </article>
+                </div>
+              </article>
+        </div>
+</body>
+</html>
