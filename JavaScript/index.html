@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="wrap">
+        <h2>JavaScript</h2>
+        <ul class="tabs">
+            <li><a href="./vistas/Primer vistazo/Bienvenido a JavaScript.html">Primer vistazo</a></li>
+            <li><a href="./vistas/Conceptos básicos/variables.html">Conceptos básicos</a></li>
+            <li><a href="./vistas/Condicionales y bucles/La declaración if.html">Condicionales y bucles</a></li>
+            <li><a href="./vistas/Funciones/Funciones definidas por el usuario.html">Funciones</a></li>
+        </ul>
+   </div>
+    <div class="contenido abrir">
+        <img src="imagenes/menu-icono.png" class="menu-bar">
+    <script src="abrir.js"></script>
+    <div class="secciones">
+      <div id="tab1">
+      <article >
+        <div class="wrap1">
+        <ul class="tabs1">
+          <li><a href="./vistas/Primer vistazo/Bienvenido a JavaScript.html">Introducción a JavaScript</a></li>
+          <li><a href="./vistas/Primer vistazo/Creando su primer JavaScript.html">Creando su primer JavaScript</a></li>
+          <li><a href="./vistas/Primer vistazo/Agregar JavaScript a una página web.html">Agregar JavaScript a una página web</a></li>
+          <li><a href="./vistas/Primer vistazo/JavaScript externo.html">JavaScript externo</a></li>
+          <li><a href="./vistas/Primer vistazo/Comentarios en JavaScript.html">Comentarios en JavaScript</a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+          <article id="tab1-1">
+            <div class="contenedorDeTexto">
+              <h2>Bienvenido a JavaScript</h2>
+              <h3>JavaScript</h3> es uno de los lenguajes de programación más populares del mundo y se utiliza para agregar interactividad a páginas web, procesar datos y crear varias aplicaciones (aplicaciones móviles, aplicaciones de escritorio, juegos y más).
+              <br><br>
+              <p>Aprender los fundamentos de un idioma le permitirá crear el programa que desee, ya sea del lado del cliente o del lado del servidor.</p><br><br>
+              <center><img src="imagenes/js.png" alt=""></center>
+          </div>
+          </article>
+
+         <article id="tab1-2"> 
+              <ul class="tabs2">
+                <li><a href="#tab1-2-1">►</a></li>
+                <li><a href="#tab1-2-2">►</a></li>
+                <li><a href="#tab1-2-3">►</a></li>
+                <li><a href="#tab1-2-4">►</a></li>
+            </ul>
+            <div class="secciones2">
+              <article id="tab1-2-1">
+                <div class="contenedorDeTexto">
+                  <h2>Tu primer JavaScript</h2>
+                    Comencemos agregando JavaScript a una página web.
+                    JavaScript en la web vive dentro del documento HTML .
+                    En HTML, el código JavaScript debe insertarse entre las etiquetas <h3>&lt;script&gt;</h3> y <h3>&lt/script&gt;</h3>:  
+                    <br><br>
+                    <img src="imagenes/script.PNG" alt=""><br><br>
+                    JavaScript se puede colocar en las secciones <h3>&lt;body&gt;</h3> y <h3>&lt;head&gt;</h3> de la página HTML.
+                    En el siguiente ejemplo, lo colocamos dentro de la etiqueta <h3>&lt;body&gt;</h3>.
+                    <br><br>
+                    <img src="imagenes/script_body.PNG" alt=""><br><br>
+                    <p>Recuerde que la secuencia de comandos, que se coloca en la sección &lt;head&gt;, se ejecutará antes de que se ejecute &lt;body&gt;. Si desea obtener elementos en el &lt;body&gt;, es una buena idea colocar su secuencia de comandos al final de la etiqueta del &lt;body&gt;.</p>
+                </div>
+              </article>
+
+              <article id="tab1-2-2">
+                <div class="contenedorDeTexto">
+                  <h2>Salida</h2>
+                  Usemos JavaScript para imprimir <h3>"Hola Mundo"</h3> en el navegador.
+                  <br><br>
+                  <img src="imagenes/hola_mundo.png" alt=""><br><br>
+                  La función <h3>document.write ()</h3> escribe una cadena en nuestro documento HTML. Esta función se puede utilizar para escribir texto, HTML o ambos.
+                  El código anterior muestra el siguiente resultado:
+                  <br><br>
+                  <img src="imagenes/hola_mundo_mostrar1.png" alt=""><br><br>
+                  <p>El método document.write () debe usarse solo para pruebas. Otros mecanismos de salida aparecen en las próximas lecciones.</p>
+                </div>
+              </article>
+
+              <article id="tab1-2-3">
+                <div class="contenedorDeTexto">
+                  <h2>Dar formato al texto</h2>
+                  Al igual que en HTML, podemos usar etiquetas HTML para dar formato al texto en JavaScript.
+                  Por ejemplo, podemos generar el texto como un encabezado.
+                  <br><br>
+                  <img src="imagenes/hola_mundo_h1.PNG" alt=""><br><br>
+                  <strong>Resultado:</strong> 
+                  <br><br>
+                  <img src="imagenes/hola_mundo_mostrar_h1.PNG" alt=""><br><br>
+                  <p>Puede generar casi todo en la página web utilizando JavaScript. Muchos marcos de JavaScript utilizan esto para crear páginas HTML.</p>       
+                </div>
+              </article>
+
+              <article id="tab1-2-4">
+                <div class="contenedorDeTexto">
+                  <h2>Salida a consola</h2>
+                  Mientras que <h3>document.write ()</h3> se usa para escribir la salida HTML, la función <h3>console.log ()</h3>  se usa para realizar la salida a la consola web.
+                  La consola se utiliza con fines de prueba y depuración.
+                  Es parte del navegador web y le permite registrar mensajes, ejecutar código JavaScript y ver errores y advertencias.
+                  Los desarrolladores utilizan principalmente la consola para probar su código JavaScript.
+                  <br><br>
+                  <strong>Por ejemplo :</strong>  <br><br>
+                  <img src="imagenes/hola_mundo_consola.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/hola_mundo_mostrar_consola.PNG" alt="">
+                </div>
+              </article>
+            </div>
+
+          </article>
+
+          <article id="tab1-3">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-3-1">►</a></li>
+                <li><a href="#tab1-3-2">►</a></li>
+                <li><a href="#tab1-3-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-3-1">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript en &lt;head&gt;</h2>
+                    Puede colocar cualquier número de scripts en un documento HTML.
+                    Normalmente, la etiqueta de secuencia de comandos se coloca en el encabezado del documento HTML:
+                    <br><br>
+                    <img src="imagenes/script_en_head.PNG" alt=""><br><br>
+                    <p>También hay una etiqueta &lt;noscript&gt;. Su contenido se mostrará si el navegador del cliente no admite scripts JS.</p>
+                </div>
+              </article>
+
+              <article id="tab1-3-2">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript en &lt;body&gt;</h2>
+                  Alternativamente, incluya JavaScript en la etiqueta &lt;body&gt;.
+                  <br><br>
+                  <img src="imagenes/script_body2.PNG" alt=""><br><br>
+                  <p>Es una buena idea colocar los scripts en la parte inferior del elemento &lt;body&gt;.
+                    Esto puede mejorar la carga de la página, porque la visualización de HTML no está bloqueada por la carga de scripts.</p>
+                </div>
+              </article>
+
+              <article id="tab1-3-3">
+                <div class="contenedorDeTexto">
+                  <h2>La etiqueta &lt;script&gt;</h2>
+                  La etiqueta &lt;script&gt; puede tener dos atributos, <h3>language</h3> y <h3>type</h3>, que especifican el tipo de script:
+                  <br><br>
+                  <img src="imagenes/etiqueta_script.PNG" alt=""><br><br>
+                  <p>El atributo "language" está obsoleto y no debe utilizarse. <br>
+                    En el siguiente ejemplo, creamos un cuadro de alerta dentro de la etiqueta del script, usando la función alert ().</p>
+                    <br><br>
+                    <img src="imagenes/script_alert.PNG" alt=""><br><br>
+                    <strong>Resultado:</strong> 
+                    <br><br>
+                    <img src="imagenes/alerta_mostrar.png" alt="">
+                </div>
+              </article>
+            </div>
+
+          </article>
+
+          <article id="tab1-4">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-4-1">►</a></li>
+                <li><a href="#tab1-4-2">►</a></li>
+                <li><a href="#tab1-4-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-4-1">
+                <div class="contenedorDeTexto">
+                  <h2>JavaScript externo</h2>
+                  Los scripts también se pueden colocar en archivos externos. <br>
+                  Los scripts externos son útiles y prácticos cuando se usa el mismo código en varias páginas web diferentes. <br>
+                  Los archivos JavaScript tienen la extensión de archivo .js. <br><br>
+                  A continuación, hemos creado un nuevo archivo de texto , y lo llamamos demo.js.
+                    <br><br>
+                  <img src="imagenes/archivo_js.png" alt=""><br><br>
+                  <p>Tener scripts JS en archivos separados hace que su código sea mucho más legible y claro.</p>
+                </div>
+              </article>
+
+              <article id="tab1-4-2">
+                <div class="contenedorDeTexto">
+                  <h2>Utilizar JavaScript externo en HTML</h2>
+                  Para utilizar un script externo, ponga el nombre del archivo de script en el atributo src (fuente) de la etiqueta &lt;script&gt;.
+                  <br>
+                  Aquí hay un ejemplo:
+                  <br><br>
+                  <img src="imagenes/script_en_html.PNG" alt=""><br><br>
+                  Su archivo demo.js incluye el siguiente JavaScript:
+                  <br><br>
+                  <img src="imagenes/alert_en_script.PNG" alt="">
+                  <br>
+                  <p>Los scripts externos no pueden contener etiquetas &lt;script&gt;</p>
+                </div>
+              </article>
+
+              <article id="tab1-4-3">
+                <div class="contenedorDeTexto">
+                  <h2>Funcionalidad JavaScript externo</h2>
+                  El resultado del ejemplo anterior será idéntico al resultado cuando incluimos el JavaScript dentro del archivo HTML.
+                  <br><br>
+                  <img src="imagenes/alerta_mostrar.png" alt=""><br><br>
+                  Puede colocar una referencia de script externo en &lt;head&gt; o &lt;body&gt;, lo que prefiera. <br>
+                  El script se comportará como si estuviera ubicado exactamente donde se encuentra la etiqueta &lt;script&gt;.
+                  <p>Colocar un JavaScript en un archivo externo tiene las siguientes ventajas: <br>
+                    - Separa HTML y código. <br>
+                    - Hace que HTML y JavaScript sean más fáciles de leer y mantener. <br>
+                    - Los archivos JavaScript en caché pueden acelerar la carga de páginas.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab1-5">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab1-5-1">►</a></li>
+                <li><a href="#tab1-5-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab1-5-1">
+                <div class="contenedorDeTexto">
+                  <h2>Comentarios de una línea JavaScript</h2>
+                  No todas las declaraciones de JavaScript se "ejecutan". <br>
+                  El código después de una doble barra <h3>//</h3>, o entre <h3>/ * </h3>y <h3>* /</h3>, se trata como un comentario. <br>
+                  Los comentarios se ignoran y no se ejecutan.
+                  <br><br>
+                  Los comentarios de una sola línea utilizan barras dobles.
+                  <br><br>
+                  <img src="imagenes/comentario_una_linea.PNG" alt=""><br><br>
+                  <strong>Resultado:</strong> <br><br>
+                  <img src="imagenes/alerta_mostrar.png" alt="">
+                  <p>Es una buena idea hacer un comentario sobre la lógica de las funciones grandes para hacer que su código sea más legible para otros.</p>
+                </div>
+              </article>
+
+              <article id="tab1-5-2">
+                <div class="contenedorDeTexto">
+                  <h2>Comentarios de varias líneas</h2>
+                  Todo lo que escriba entre <h3>/ * </h3>y <h3>* /</h3> se considerará un comentario de varias líneas.
+                  <br>
+                  Aquí hay un ejemplo:
+                  <br><br>
+                  <img src="imagenes/comentario_varias_lineas.PNG" alt=""><br><br>
+                  <p>Los comentarios se utilizan para describir y explicar lo que hace el código.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </article>
+      </div>
+
+      <article id="tab2">
+        <div class="wrap2">
+          <ul class="tabs1">
+            <li><a href="#tab2-1">Variables</a></li>
+            <li><a href="#tab2-2">Tipos de datos</a></li>
+            <li><a href="#tab2-3">Operadores matemáticos</a></li>
+            <li><a href="#tab2-4">Operadores de asignación</a></li>
+            <li><a href="#tab2-5">Operadores de comparación</a></li>
+            <li><a href="#tab2-6">Operadores lógicos o booleanos</a></li>
+            <li><a href="#tab2-7">Operadores de cadenas</a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+          <article id="tab2-1">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-1-1">►</a></li>
+                <li><a href="#tab2-1-2">►</a></li>
+                <li><a href="#tab2-1-3">►</a></li>
+                <li><a href="#tab2-1-4">►</a></li>
+                <li><a href="#tab2-1-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-1-1">
+                <div class="contenedorDeTexto">
+                  <h2>Variables</h2>
+                  Las variables son contenedores para almacenar valores de datos. El valor de una variable puede cambiar a lo largo del programa.
+                  Utilice la palabra clave var para declarar una variable :
+                  <br><br>
+                  <img src="imagenes/variable.png" alt=""><br><br>
+                  En el ejemplo anterior, el valor 10 se asigna a la variable x . <br><br>
+                  <p>JavaScript distingue entre mayúsculas y minúsculas. Por ejemplo, las variables primerNombre y primernombre , son dos variables diferentes.</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-2">
+                <div class="contenedorDeTexto">
+                  <h2>El signo igual</h2>
+                  En JavaScript, el signo igual (=) se denomina operador de " asignación ", en lugar de operador "igual a".
+                  Por ejemplo, x = y asignará el valor de y a x .                
+                  <br><br>
+                  <p>Una variable se puede declarar sin valor. El valor puede requerir algún cálculo, algo que se proporcionará más adelante, como la entrada del usuario. <br>
+                    Una variable declarada sin un valor tendrá el valor indefinido .</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-3">
+                <div class="contenedorDeTexto">
+                  <h2>Usando Variables</h2>
+                  Asignaremos un valor a una variable y lo mostraremos en el navegador.              
+                  <br><br>
+                  <img src="imagenes/mostrar_variable.png" alt=""> <br><br>
+                  <strong>Resultado:</strong> <br><br>
+                  <img src="imagenes/variable_navegador.png" alt=""><br><br>
+                  El uso de variables es útil de muchas formas. Puede tener mil líneas de código que pueden incluir la variable x. Cuando cambie el valor de x una vez , se cambiará automáticamente en todos los lugares donde lo utilizó.
+                  <p>Cada "instrucción" escrita se llama declaración . Las declaraciones de JavaScript están separadas por punto y coma .</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-4">
+                <div class="contenedorDeTexto">
+                  <h2>Nombrar variables</h2>
+                  Los nombres de las variables de JavaScript distinguen entre mayúsculas y minúsculas. <br>
+                  En el siguiente ejemplo, cambiamos x a mayúsculas: <br><br>           
+                  <img src="imagenes/cambio_variable.png" alt=""><br><br>
+                  Este código no dará como resultado ninguna salida, ya que x y X son dos variables diferentes. <br><br>
+                  <strong>Reglas de nomenclatura:</strong> <br>
+                  - El primer carácter debe ser una letra, un guión bajo (_) o un signo de dólar ($). Los caracteres siguientes pueden ser letras, dígitos, guiones bajos o signos de dólar. <br>
+                  - No se permiten números como primer carácter. <br>
+                  - Los nombres de las variables no pueden incluir un operador matemático o lógico en el nombre. Por ejemplo, 2 * algo o esto + aquello; <br>
+                  - Los nombres de JavaScript no deben contener espacios. <br><br>
+                  <p>Los guiones no están permitidos en JavaScript. Está reservado para restas.</p>
+                </div>
+              </article>
+
+              <article id="tab2-1-5">
+                <div class="contenedorDeTexto">
+                  <h2>Nombrar variables</h2>
+                  Hay algunas otras reglas a seguir al nombrar sus variables de JavaScript: <br>
+                  - No debe usar ningún símbolo especial , como my # num, num% , etc. <br>
+                  - Asegúrese de no usar ninguna de las siguientes palabras reservadas de JavaScript.
+                  <br><br>
+                  <img src="imagenes/nombres_de_variables.png" alt=""><br><br>
+                  <p>Cuando se familiarice con JavaScript, recordar estas palabras clave será mucho más fácil.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-2">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-2-1">►</a></li>
+                <li><a href="#tab2-2-2">►</a></li>
+                <li><a href="#tab2-2-3">►</a></li>
+                <li><a href="#tab2-2-4">►</a></li>
+                <li><a href="#tab2-2-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-2-1">
+                <div class="contenedorDeTexto">
+                  <h2>Tipos de datos</h2>
+                  El término tipo de datos se refiere a los tipos de valores con los que puede trabajar un programa. Las variables de JavaScript pueden contener muchos tipos de datos, como números , cadenas , matrices y más.
+                  <br><br>
+                  A diferencia de muchos otros lenguajes de programación, JavaScript no define diferentes tipos de números, como enteros, cortos, largos, de punto flotante, etc. Losnúmeros de JavaScript se pueden escribir con o sin decimales.
+                  <br><br>
+                  <img src="imagenes/variables_sin_decimales.png" alt=""><br><br>
+                  <p>Esta variable se puede cambiar fácilmente a otros tipos asignándole cualquier otro valor de tipo de datos, como num = 'alguna cadena aleatoria '.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-2">
+                <div class="contenedorDeTexto">
+                  <h2>Números con decimales</h2>
+                  Los números de JavaScript también pueden tener decimales.              
+                  <br><br>
+                  <img src="imagenes/variables_con_decimales.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_numero_con_decimal.png" alt="">
+                  <p>Los números de JavaScript siempre se almacenan como números de coma flotante de doble precisión.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-3">
+                <div class="contenedorDeTexto">
+                  <h2>Cadenas</h2>
+                  Las cadenas o strings de JavaScript se utilizan para almacenar y manipular texto. <br>
+                  Una cadena puede ser cualquier texto que aparezca entre comillas . Puede utilizar comillas simples o dobles.
+                  <br><br>
+                  <img src="imagenes/strings1.png" alt=""> <br><br>
+                  Puede usar comillas dentro de una cadena , siempre que no coincidan con las comillas que rodean la cadena. <br><br>
+                  <img src="imagenes/strings2.png" alt=""><br><br>
+                  <p>Puede obtener comillas dobles dentro de comillas dobles utilizando el carácter de escape como este: \ "o \ 'dentro de comillas simples.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-4">
+                <div class="contenedorDeTexto">
+                  <h2>Cadenas</h2>
+                  Como las cadenas deben escribirse entre comillas, deben manejarse las comillas dentro de la cadena . El carácter de escape de barra invertida () convierte los caracteres especiales en caracteres de cadena . <br><br>           
+                  <img src="imagenes/variable_saludar.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_variable_saludar.png" alt=""><br><br>
+                  El carácter de escape () también se puede utilizar para insertar otros caracteres especiales en una cadena. <br>
+                  Estos caracteres especiales se pueden agregar a una cadena de texto usando el signo de barra invertida. <br><br>
+                  <img src="imagenes/caracteres_de _escape.png" alt=""><br><br>
+                  <p>Si comienza una cadena con una comilla simple, también debe terminarla con una comilla simple. La misma regla se aplica a las comillas dobles. De lo contrario, JavaScript se confundirá.</p>
+                </div>
+              </article>
+
+              <article id="tab2-2-5">
+                <div class="contenedorDeTexto">
+                  <h2>Datos Booleanos</h2>
+                  En JavaScript booleano, puede tener uno de dos valores, verdadero o falso .
+                  Éstos son útiles cuando necesita un tipo de datos que solo puede tener uno de dos valores, como Sí / No, Activado / Desactivado, Verdadero / Falso. <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/variable_booleana.png" alt=""><br><br>
+                  <p>El valor booleano de 0 (cero), nulo , indefinido , cadena vacía es falso .
+                    Todo lo que tenga un valor "real" es cierto.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-3">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-3-1">►</a></li>
+                <li><a href="#tab2-3-2">►</a></li>
+                <li><a href="#tab2-3-3">►</a></li>
+                <li><a href="#tab2-3-4">►</a></li>
+                <li><a href="#tab2-3-5">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-3-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores aritméticos</h2>
+                  Los operadores aritméticos realizan funciones aritméticas en números (literales o variables).
+                  <br><br>
+                  <img src="imagenes/operadores_aritmeticos.png" alt=""><br><br>
+                  En el siguiente ejemplo, el operador de suma se usa para determinar la suma de dos números.
+                  <br><br>
+                  <img src="imagenes/suma.png" alt=""><br><br>
+                  Puede sumar tantos números o variables como desee o necesite. <br><br>
+                  <img src="imagenes/suma2.png" alt=""> <br><br>
+                  <p>Puede obtener el resultado de una expresión de cadena utilizando la función eval (), que toma un argumento de expresión de cadena como eval ("10 * 20 + 8") y devuelve el resultado. Si el argumento está vacío, devuelve undefined.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-2">
+                <div class="contenedorDeTexto">
+                  <h2>Multiplicación</h2>
+                  El operador de multiplicación (*) multiplica un número por el otro.            
+                  <br><br>
+                  <img src="imagenes/multiplicacion.png" alt=""><br><br>
+                  <p>10 '5' o '10' '5' dan el mismo resultado. Multiplicar un número con valores de cadena como 'aprendiendo' * 5 devuelve NaN (No es un número).</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-3">
+                <div class="contenedorDeTexto">
+                  <h2>División</h2>
+                  El operador / se utiliza para realizar operaciones de división:
+                  <br><br>
+                  <img src="imagenes/division.png" alt=""> <br><br>
+                  <p>Recuerde manejar los casos en los que podría haber una división entre 0.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-4">
+                <div class="contenedorDeTexto">
+                  <h2>Módulo</h2>
+                  El operador de módulo (%) devuelve el resto de la división (lo que queda).<br><br>           
+                  <img src="imagenes/modulo.png" alt=""><br><br>
+                  <p>En JavaScript, el operador de módulo se usa no solo en números enteros, sino también en números de punto flotante.</p>
+                </div>
+              </article>
+
+              <article id="tab2-3-5">
+                <div class="contenedorDeTexto">
+                  <h2>Incremento y decremento</h2>
+                  <strong>Incremento ++</strong> <br>
+                  El operador de incremento incrementa el valor numérico de su operando en uno. Si se coloca antes del operando, devuelve el valor incrementado. Si se coloca después del operando, devuelve el valor original y luego incrementa el operando. <br><br>
+                  <strong>Decremento --</strong> <br>
+                  El operador de decremento reduce el valor numérico de su operando en uno. Si se coloca antes del operando, devuelve el valor decrementado. Si se coloca después del operando, devuelve el valor original y luego disminuye el operando. <br><br>
+                  <strong>Algunos ejemplos:</strong><br><br>
+                  <img src="imagenes/ejemplos_incremento_decremento.png" alt=""><br><br>
+                  <p>Como en las matemáticas escolares, puede cambiar el orden de las operaciones aritméticas utilizando paréntesis. <br>
+                   <strong>Ejemplo:</strong> var x = (100 + 50) * 3;</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article id="tab2-4">
+            <div class="contenedorDeTexto">
+              <h2>Operadores de Asignación</h2>
+              Los operadores de asignación asignan valores a las variables de JavaScript.
+              <br><br>
+              <img src="imagenes/operadores_de_asignacion.png" alt=""><br><br>
+              <p>Puede utilizar varios operadores de asignación en una línea, como x - = y + = 9.</p>
+          </div>
+          </article>
+
+          <article id="tab2-5">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-5-1">►</a></li>
+                <li><a href="#tab2-5-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-5-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores de comparación</h2>
+                  Los operadores de comparación se utilizan en declaraciones lógicas para determinar la igualdad o diferencia entre variables o valores. Devuelven verdadero o falso. <br><br>
+                  El operador igual a (==) comprueba si los valores de los operandos son iguales. <br><br>
+                  <img src="imagenes/operador_de_comparacion.png" alt=""><br><br>
+                  <p>Puede comprobar todo tipo de datos; los operadores de comparación siempre devuelven verdadero o falso.</p>
+                </div>
+              </article>
+
+              <article id="tab2-5-2">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores de comparación</h2>
+                  La siguiente tabla explica los operadores de comparación.          
+                  <br><br>
+                  <img src="imagenes/tabla_operadores_de_comparacion.png" alt=""><br><br>
+                  <p>Cuando utilice operadores, asegúrese de que los argumentos sean del mismo tipo de datos; los números deben compararse con números, cadenas con cadenas, etc.</p>
+                </div>
+              </article>
+
+            </div>
+          </article>
+
+          <article id="tab2-6">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab2-6-1">►</a></li>
+                <li><a href="#tab2-6-2">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab2-6-1">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores lógicos</h2>
+                  Los operadores lógicos , también conocidos como operadores booleanos , evalúan la expresión y devuelven verdadero o falso. <br><br>
+                  La siguiente tabla explica los operadores lógicos <strong>( AND, OR, NOT )</strong>. <br><br>
+                  <img src="imagenes/tabla_operadores_logicos.png" alt="" width="600px" height="300px"><br><br>
+                  <p>Puede comprobar todo tipo de datos; los operadores de comparación siempre devuelven verdadero o falso.</p>
+                </div>
+              </article>
+
+              <article id="tab2-6-2">
+                <div class="contenedorDeTexto">
+                  <h2>Operadores lógicos</h2>
+                  En el siguiente ejemplo, hemos conectado dos expresiones booleanas con el operador <strong>AND</strong>.        
+                  <br><br>
+                  <img src="imagenes/and.png" alt=""><br><br>
+                  Para que esta expresión sea verdadera , ambas condiciones deben ser verdaderas. <br>
+                  - La primera condición determina si 4 es mayor que 2, lo cual es cierto. <br>
+                  - La segunda condición determina si 10 es menor que 15, lo cual también es cierto. <br><br>
+                  Con base en estos resultados, se encuentra que toda la expresión es verdadera. <br><br>
+                  <h3>Operador condicional (Ternary)</h3> <br><br>
+                  Otro operador condicional de JavaScript asigna un valor a una variable, según alguna condición. <br><br>
+                  <strong>Sintaxis:</strong> <br><br>
+                  <img src="imagenes/sintaxis_ternary.png" alt=""> <br><br>
+                  <strong>Por ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_ternary.png" alt=""><br><br>
+                  Si la variable edad es un valor por debajo de 18, el valor de la variable adulto será "Demasiado joven". De lo contrario, el valor adulto será "Lo suficientemente mayor". <br><br>
+                  <p>Los operadores lógicos le permiten conectar tantas expresiones como desee.</p>
+                </div>
+              </article>
+
+            </div>
+          </article>
+
+          <article id="tab2-7">
+            <div class="contenedorDeTexto">
+              <h2>Operadores de cadenas</h2>
+              El operador más útil para cadenas es la concatenación , representada por el signo +. <br>
+              La concatenación se puede utilizar para construir cadenas uniendo varias cadenas o uniendo cadenas con otros tipos: <br><br>
+              <img src="imagenes/concatenacion.png" alt=""><br><br>
+              El ejemplo anterior declara e inicializa dos variables de cadena y luego las concatena. <br><br>
+              <img src="imagenes/mostrar_concatenacion.png" alt=""><br><br>
+              <p>Los números entre comillas se tratan como cadenas: "42" no es el número 42, es una cadena que incluye dos caracteres, 4 y 2.</p>
+          </div>
+          </article>
+        </div>
+      </article>
+
+
+      <article id="tab3">
+        <div class="wrap4">
+          <ul class="tabs1">
+            <li><a href="#tab3-1">La declaración if</a></li>
+            <li><a href="#tab3-2">La declaración else</a></li>
+            <li><a href="#tab3-3">La declaración else if </a></li>
+            <li><a href="#tab3-4">La declaración switch</a></li>
+            <li><a href="#tab3-5">El bucle for</a></li>
+            <li><a href="#tab3-6">El bucle while</a></li>
+            <li><a href="#tab3-7">El bucle Do ... While</a></li>
+            <li><a href="#tab3-8">Break y Continue</a></li>
+        </ul>
+      </div>
+      <div class="secciones1">
+        <article id="tab3-1">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-1-1">►</a></li>
+              <li><a href="#tab3-1-2">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-1-1">
+              <div class="contenedorDeTexto">
+                <h2>La declaración if</h2>
+                Muy a menudo, cuando escribe código, desea realizar diferentes acciones en función de diferentes condiciones.
+                Puede hacer esto usando declaraciones condicionales en su código. <br>
+                Use if para especificar un bloque de código que se ejecutará si una condición especificada es verdadera.
+                <br><br>
+                <img src="imagenes/if.png" alt=""><br><br>
+                Las declaraciones se ejecutarán solo si la condición especificada es verdadera. <br><br>
+                <strong>Ejemplo:</strong><br><br>
+                <img src="imagenes/ejemplo_if.png" alt=""><br><br>
+                <strong>Resultado:</strong><br><br>
+                <img src="imagenes/resultado_if.png" alt=""><br><br>
+                <p>Como se ve en la imagen de arriba, el método JavaScript alert () se utiliza para generar un cuadro de alerta emergente que contiene la información proporcionada entre paréntesis.</p>
+              </div>
+            </article>
+
+            <article id="tab3-1-2">
+              <div class="contenedorDeTexto">
+                <h2>La declaración if</h2>
+                Este es otro ejemplo de una declaración condicional falsa.               
+                <br><br>
+                <img src="imagenes/if_falso.png" alt=""><br><br>
+                A medida que la condición se evalúa como falsa, se omite la declaración de alerta y el programa continúa con la línea después de la llave de cierre de la declaración if. <br><br>
+                <p>Tenga en cuenta que si está en minúsculas. Las letras mayúsculas (If o IF) generarán un error.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article id="tab3-2">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-2-1">►</a></li>
+              <li><a href="#tab3-2-2">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-2-1">
+              <div class="contenedorDeTexto">
+                <h2>La declaración else</h2>
+                Utilice la instrucción else para especificar un bloque de código que se ejecutará si la condición es falsa.
+                <br><br>
+                <img src="imagenes/else.png" alt=""><br><br>
+                <p>Puede omitir las llaves si su código bajo la condición contiene solo un comando.</p>
+              </div>
+            </article>
+
+            <article id="tab3-2-2">
+              <div class="contenedorDeTexto">
+                <h2>La declaración else</h2>
+                El siguiente ejemplo demuestra el uso de una instrucción if ... else.       
+                <br><br>
+                <img src="imagenes/if_else.png" alt=""><br><br>
+                <strong>El ejemplo anterior dice:</strong><br>
+                - Si numero es mayor que numero2, mostrar "Esta es mi primera condición". <br>
+                - De lo contrario, mostrar "Esta es mi segunda condición". <br><br>
+                El navegador imprimirá la segunda condición, ya que 7 no es mayor que 10. <br><br>
+                <img src="imagenes/mostrar_if_else.png" alt=""> <br><br>
+                <p>También hay otra forma de hacer esta verificación usando el operador:<strong>?</strong> (a>b)? alert(a): alert(b).</p>
+              </div>
+            </article>
+ </div>
+        </article>
+
+        <article id="tab3-3">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-3-1">►</a></li>
+              <li><a href="#tab3-3-2">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-3-1">
+              <div class="contenedorDeTexto">
+                <h2>else if</h2>
+                Puede usar la instrucción else if para especificar una nueva condición si la primera condición es falsa. <br><br>
+                <strong>Ejemplo:</strong><br><br>
+                <img src="imagenes/ejemplo_else_if.png" alt=""><br><br>
+                El código anterior dice: <br>
+                - Si el curso es igual a 1, da como resultado "Tutorial HTML" <br>
+                - De lo contrario, si el curso es igual a 2, generar "Tutorial CSS" <br>
+                - Si no se cumple ninguna de las condiciones anteriores, generar "Tutorial de JavaScript";<br><br>
+                curso es igual a 1, por lo que obtenemos el siguiente resultado: <br><br>
+                <img src="imagenes/resultado_else_if.png" alt=""><br><br>
+                <p>La sentencia else final "finaliza" la sentencia else if y siempre debe escribirse después de las sentencias if y else if.</p>
+              </div>
+            </article>
+
+            <article id="tab3-3-2">
+              <div class="contenedorDeTexto">
+                <h2>else if</h2>
+                El bloque else final se ejecutará cuando ninguna de las condiciones sea verdadera. <br>
+                Cambiemos el valor de la variable curso en nuestro ejemplo anterior. <br><br>
+                <img src="imagenes/ejemplo_else_if2.png" alt=""><br><br>
+                <strong>El resultado:</strong><br><br>
+                <img src="imagenes/resultado_else_if2.png" alt=""><br><br>
+                <p>Puede escribir tantas declaraciones if como necesite.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article id="tab3-4">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-4-1">►</a></li>
+              <li><a href="#tab3-4-2">►</a></li>
+              <li><a href="#tab3-4-1">►</a></li>
+              <li><a href="#tab3-4-2">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-4-1">
+              <div class="contenedorDeTexto">
+                <h2>SWITCH</h2>
+                En los casos en los que necesite probar varias condiciones, escribir declaraciones if else para cada condición podría no ser la mejor solución. <br>
+                La declaración switch se utiliza para realizar diferentes acciones en función de diferentes condiciones.<br><br>
+                <strong>Sintaxis:</strong><br><br>
+                <img src="imagenes/sintaxis_switch.png" alt=""><br><br>
+                La expresión de cambio se evalúa una vez. El valor de la expresión se compara con los valores de cada caso. <br>
+                Si hay una coincidencia, se ejecuta el bloque de código asociado. <br><br>
+                <p>Puede lograr el mismo resultado con varias instrucciones if ... else, pero la instrucción switch es más efectiva en tales situaciones.</p>
+              </div>
+            </article>
+
+            <article id="tab3-4-2">
+              <div class="contenedorDeTexto">
+                <h2>La declaración switch</h2>
+                Considere el siguiente ejemplo.<br><br>
+                <img src="imagenes/ejemplo_switch.png" alt=""><br><br>
+                <p>Puede tener tantas declaraciones de casos como necesite.</p>
+              </div>
+            </article>
+
+            <article id="tab3-4-3">
+              <div class="contenedorDeTexto">
+                <h2>La palabra clave break</h2>
+                Cuando el código JavaScript llega a una palabra clave break , sale del bloque switch. <br>
+                Esto detendrá la ejecución de más pruebas de código y casos dentro del bloque. <br><br>
+                <p>Por lo general, se debe poner un break en cada declaración de case.</p>
+              </div>
+            </article>
+
+            <article id="tab3-4-4">
+              <div class="contenedorDeTexto">
+                <h2>La palabra clave default</h2>
+                La palabra clave default especifica el código que se ejecutará si no hay coincidencia de casos. <br><br>
+                <img src="imagenes/ejemplo_default.png" alt=""><br><br>
+                <p>El bloque default se puede omitir si no es necesario manejar el caso cuando no se encuentra ninguna coincidencia.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article id="tab3-5">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-5-1">►</a></li>
+              <li><a href="#tab3-5-2">►</a></li>
+              <li><a href="#tab3-5-3">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-5-1">
+              <div class="contenedorDeTexto">
+                <h2>Bucles</h2>
+                Los bucles pueden ejecutar un bloque de código varias veces. Son útiles en los casos en los que desea ejecutar el mismo código repetidamente, agregando un valor diferente cada vez.<br><br>
+                JavaScript tiene tres tipos de bucles: for , while y do while. <br><br>
+                El bucle for se usa comúnmente al crear un bucle. <br><br>
+                <strong>La sintaxis:</strong><br><br>
+                <img src="imagenes/sintaxis_for.png" alt=""><br><br>
+                La declaración 1 se ejecuta antes de que comience el ciclo (el bloque de código). <br>
+                La declaración 2 define la condición para ejecutar el ciclo (el bloque de código). <br>
+                La sentencia 3 se ejecuta cada vez que se ejecuta el bucle (el bloque de código). <br><br>
+                <p>Como puede ver, el ciclo for clásico tiene tres componentes o declaraciones.</p>
+              </div>
+            </article>
+
+            <article id="tab3-5-2">
+              <div class="contenedorDeTexto">
+                <h2>El bucle for</h2>
+                El siguiente ejemplo crea un bucle for que imprime los números del 1 al 5.<br><br>
+                <img src="imagenes/for.png" alt=""><br><br>
+                En este ejemplo, la declaración 1 establece una variable antes de que comience el ciclo ( var i = 1). <br>
+                La declaración 2 define la condición para que se ejecute el ciclo (i debe ser menor o igual que 5). <br>
+                La declaración 3 aumenta un valor (i ++) cada vez que se ejecuta el bloque de código en el bucle. <br><br>
+                <strong>Resultado:</strong><br><br>
+                <img src="imagenes/resultado_for.png" alt=""><br><br>
+                La declaración 1 es opcional y se puede omitir si sus valores se establecen antes de que comience el ciclo. <br><br>
+                <img src="imagenes/alternativa_for.png" alt=""><br><br>
+                Además, puede iniciar más de un valor en la declaración 1 , utilizando comas para separarlos. <br><br>
+                <img src="imagenes/alternativa_for2.png" alt="">
+              </div>
+            </article>
+
+            <article id="tab3-5-3">
+              <div class="contenedorDeTexto">
+                <h2>El bucle for</h2>
+                Si la declaración 2 devuelve verdadero, el ciclo comenzará de nuevo, si devuelve falso, el ciclo terminará. <br>
+                La declaración 2 también es opcional. <br><br>
+                <p>Si omite la declaración 2, debe proporcionar un break dentro del ciclo. De lo contrario, el ciclo nunca terminará.</p><br><br>
+                La declaración 3 se usa para cambiar la variable inicial . Puede hacer cualquier cosa, incluido incremento negativo (i--), incremento positivo (i = i + 15) o cualquier otra cosa. <br>
+                La declaración 3 también es opcional y se puede omitir si incrementa sus valores dentro del ciclo. <br><br>
+                <img src="imagenes/for_alternativa3.png" alt=""><br><br>
+                <p>Puede tener varios bucles for anidados.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article id="tab3-6">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-6-1">►</a></li>
+              <li><a href="#tab3-6-2">►</a></li>
+              <li><a href="#tab3-6-3">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-6-1">
+              <div class="contenedorDeTexto">
+                <h2>El bucle while</h2>
+                El while repite el bucle a través de un bloque de código, siempre que una condición especificada es verdadera.<br><br>
+                <strong>Sintaxis:</strong><br><br>
+                <img src="imagenes/sintaxis_while.png"><br><br>
+                <p>La condición puede ser cualquier declaración condicional que devuelva verdadero o falso.</p>
+              </div>
+            </article>
+
+            <article id="tab3-6-2">
+              <div class="contenedorDeTexto">
+                <h2>El bucle while</h2>
+                Considere el siguiente ejemplo.<br><br>
+                <img src="imagenes/ejemplo_while.png" alt=""><br><br>
+                El bucle continuará ejecutándose mientras i sea menor o igual a 10. Cada vez que se ejecute el bucle, aumentará en 1. <br><br>
+                Esto generará los valores de 0 a 10. <br><br>
+                <img src="imagenes/mostrar_while.png" alt=""><br><br>
+                <p>Tenga cuidado con las condiciones de escritura. Si una condición es siempre verdadera, el ciclo se ejecutará para siempre.</p>
+              </div>
+            </article>
+
+            <article id="tab3-6-3">
+              <div class="contenedorDeTexto">
+                <h2>El bucle while</h2>
+                Si olvida aumentar la variable utilizada en la condición, el ciclo nunca terminará. <br><br>
+                <p>Asegúrese de que la condición en un ciclo while eventualmente se vuelva falsa.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article id="tab3-7">
+          <div class="contenedorDeTexto">
+            <h2>El bucle Do ... While</h2>
+            El bucle do ... while es una variante del bucle while. Este bucle ejecutará el bloque de código una vez, antes de comprobar si la condición es verdadera, y luego repetirá el bucle siempre que la condición sea verdadera. <br><br>
+            <strong>Sintaxis:</strong><br><br>
+            <img src="imagenes/sintaxis_do_while.png" alt=""><br><br>
+            <p>Tenga en cuenta el punto y coma que se utiliza al final del ciclo do ... while.</p><br><br>
+            <strong>Ejemplo:</strong><br><br>
+            <img src="imagenes/ejemplo_do_while.png" alt=""><br><br>
+            Esto imprime números del 20 al 25. <br><br>
+            <img src="imagenes/mostrar_do_while.png" alt="">
+            <p>El bucle siempre se ejecutará al menos una vez , incluso si la condición es falsa, porque el bloque de código se ejecuta antes de probar la condición.</p>
+        </div>
+        </article>
+
+        <article id="tab3-8">
+          <div class="">
+            <ul class="tabs2">
+              <li><a href="#tab3-8-1">►</a></li>
+              <li><a href="#tab3-8-2">►</a></li>
+          </ul>
+          </div>
+          <div class="secciones2">
+            <article id="tab3-8-1">
+              <div class="contenedorDeTexto">
+                <h2>Break</h2>
+                La declaración break "salta" de un bucle y continúa ejecutando el código después del bucle. <br><br>
+                <img src="imagenes/if_break.png" alt=""><br><br>
+                Una vez que llegue a 5, saldrá del bucle. <br><br>
+                <img src="imagenes/mostrar_if_break.png" alt=""><br><br>
+                <p>Puede usar la palabra clave return para devolver algún valor inmediatamente desde el bucle dentro de una función. Esto también romperá el bucle.</p>
+              </div>
+            </article>
+
+            <article id="tab3-8-2">
+              <div class="contenedorDeTexto">
+                <h2>Continue</h2>
+                La instrucción continue rompe solo una iteración en el ciclo y continúa con la siguiente iteración.<br><br>
+                <img src="imagenes/continue.png" alt=""><br><br>
+                <strong>Resultado:</strong><br><br>
+                <img src="imagenes/resultado_continue.png" alt=""><br><br>
+                <p>El valor 5 no se imprime, porque continue omite esa iteración del ciclo.</p>
+              </div>
+            </article>
+
+          </div>
+        </article>
+      </div>
+      </article>
+
+
+      <article id="tab4">
+        <div class="wrap4">
+          <ul class="tabs1">
+            <li><a href="#tab4-1">Funciones definidas por el usuario</a></li>
+            <li><a href="#tab4-2">Parámetros de función</a></li>
+            <li><a href="#tab4-3">Usar varios parámetros con funciones</a></li>
+            <li><a href="#tab4-4">La declaración de devolución </a></li>
+            <li><a href="#tab4-5">Alert, Prompt, Confirm </a></li>
+        </ul>
+        </div>
+        <div class="secciones1">
+          <article id="tab4-1">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab4-1-1">►</a></li>
+                <li><a href="#tab4-1-2">►</a></li>
+                <li><a href="#tab4-1-3">►</a></li>
+                <li><a href="#tab4-1-4">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab4-1-1">
+                <div class="contenedorDeTexto">
+                  <h2>Funciones de JavaScript</h2>
+                  Una función de JavaScript es un bloque de código diseñado para realizar una tarea en particular. <br><br>
+                  <strong>Las principales ventajas de utilizar funciones:</strong><br>
+                  Reutilización de código : defina el código una vez y utilícelo muchas veces. <br>
+                  Utilice el mismo código muchas veces con diferentes argumentos para producir resultados diferentes. <br><br>
+                  <p>Una función de JavaScript se ejecuta cuando "algo" la invoca o la llama.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-1-2">
+                <div class="contenedorDeTexto">
+                  <h2>Definición de una función</h2>       
+                  Para definir una función de JavaScript, use la palabra clave de función , seguida de un nombre , seguido de un par de paréntesis ().<br><br>
+                  El código que ejecutará la función se coloca entre llaves {}. <br><br>
+                  <img src="imagenes/definicion_de_funcion.png" alt=""><br><br>
+                  <p>Los nombres de funciones pueden contener letras, dígitos, subrayados y signos de dólar (las mismas reglas que las variables).</p>
+                </div>
+              </article>
+
+              <article id="tab4-1-3">
+                <div class="contenedorDeTexto">
+                  <h2>Llamar a una función</h2>   
+                  Para ejecutar la función, debe llamarla. <br>
+                  Para llamar a una función, comience con el nombre de la función, luego sígala con los argumentos entre paréntesis.<br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/llamando_a_una_funcion.png" alt=""><br><br>
+                  <p>Recuerde siempre terminar la declaración con un punto y coma después de llamar a la función.</p>
+                </div>
+              </article>
+
+              <article id="tab4-1-4">
+                <div class="contenedorDeTexto">
+                  <h2>Llamando Funciones</h2>
+                  Una vez que se define la función, JavaScript le permite llamarla tantas veces como desee. <br><br>
+                  <img src="imagenes/llamando_funciones.png" alt=""><br><br>
+                  <p>También puede llamar a una función usando esta sintaxis: miFuncion.call (). La diferencia es que cuando se llama de esta manera, se pasa la palabra clave 'this' a una función. Lo aprenderá más tarde.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+  
+          <article id="tab4-2">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab4-2-1">►</a></li>
+                <li><a href="#tab4-2-2">►</a></li>
+                <li><a href="#tab4-2-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab4-2-1">
+                <div class="contenedorDeTexto">
+                  <h2>Parámetros de función</h2>
+                  Las funciones pueden tomar parámetros.<br>
+                  Los parámetros de función son los nombres enumerados en la definición de la función.<br><br>
+                  <strong>Sintaxis:</strong><br><br>
+                  <img src="imagenes/funcion_con_parametros.png" alt=""><br><br>
+                  <p> Al igual que con las variables, los parámetros deben tener nombres , que están separados por comas entre paréntesis.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-2-2">
+                <div class="contenedorDeTexto">
+                  <h2>Usar parámetros</h2>     
+                  Después de definir los parámetros, puede usarlos dentro de la función.<br><br>
+                  <img src="imagenes/funcion_con_parametros2.png" alt=""><br><br>
+                  Esta función toma un parámetro, que se llama nombre . Al llamar a la función, proporcione el valor del parámetro (argumento) entre paréntesis. <br><br>
+                  <p>Los argumentos de la función son los valores reales pasados ​​(y recibidos) por la función.</p>
+                </div>
+              </article>
+
+              <article id="tab4-2-3">
+                <div class="contenedorDeTexto">
+                  <h2>Usar distintos parámetros</h2>
+                  Puede definir una única función y pasarle diferentes valores de parámetros (argumentos).<br><br>
+                  <img src="imagenes/funcion_con_distintos_parametros.png" alt=""><br><br>
+                  <p>Esto ejecutará el código de la función cada vez para el argumento proporcionado.</p>
+                </div>
+              </article>
+   </div>
+          </article>
+  
+          <article id="tab4-3">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab4-3-1">►</a></li>
+                <li><a href="#tab4-3-2">►</a></li>
+                <li><a href="#tab4-3-3">►</a></li>
+                <li><a href="#tab4-3-4">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab4-3-1">
+                <div class="contenedorDeTexto">
+                  <h2>Múltiples parámetros</h2>
+                  Puede definir varios parámetros para una función separándolos por comas.<br><br>
+                  <img src="imagenes/funcion_con_multiples_parametros.png" alt=""><br><br>
+                  <p>El ejemplo anterior define la función miFuncion para tomar dos parámetros.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-3-2">
+                <div class="contenedorDeTexto">
+                  <h2>Múltiples parámetros</h2>
+                  Los parámetros se utilizan dentro de la definición de la función.<br><br>
+                  <img src="imagenes/funcion_con_multiples_parametros2.png" alt=""><br><br>
+                  <p>Los parámetros de función son los nombres enumerados en la definición de función.</p>
+                </div>
+              </article>
+
+              <article id="tab4-3-3">
+                <div class="contenedorDeTexto">
+                  <h2>Múltiples parámetros</h2>
+                  Al llamar a la función, proporcione los argumentos en el mismo orden en que los definió. <br><br>
+                  <img src="imagenes/funcion_con_multiples_parametros3.png" alt="">
+                </div>
+              </article>
+
+              <article id="tab4-3-4">
+                <div class="contenedorDeTexto">
+                  <h2>Múltiples parámetros</h2>
+                  Después de definir la función, puede llamarla tantas veces como sea necesario. <br>
+                  Las funciones de JavaScript no verifican el número de argumentos recibidos. <br><br>
+                  <p>Si se llama a una función con argumentos faltantes (menos de los declarados), los valores faltantes se establecen como indefinidos , lo que indica que a una variable no se le ha asignado un valor.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+  
+          <article id="tab4-4">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab4-4-1">►</a></li>
+                <li><a href="#tab4-4-2">►</a></li>
+                <li><a href="#tab4-4-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab4-4-1">
+                <div class="contenedorDeTexto">
+                  <h2>Return en la función</h2>
+                  Una función puede tener una declaración return opcional . Se utiliza para devolver un valor de la función. <br><br>
+                  Esta declaración es útil cuando se realizan cálculos que requieren un resultado. <br><br>
+                  <p>Cuando JavaScript llega a una declaración de retorno , la función deja de ejecutarse.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-4-2">
+                <div class="contenedorDeTexto">
+                  <h2>Return en la función</h2>
+                  Utilice la declaración return para devolver un valor. <br><br>
+                  Por ejemplo, calculemos el producto de dos números y devolvamos el resultado. <br><br>
+                  <img src="imagenes/return_en_la_funcion.png" alt=""><br><br>
+                  <p> Si no devuelve nada de una función, devolverá undefined.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-4-3">
+                <div class="contenedorDeTexto">
+                  <h2>Return en la función</h2>
+                  <strong>Otro ejemplo:</strong><br><br>
+                  <img src="imagenes/return_en_la_funcion2.png" alt=""><br><br>
+                  <p>El comando document.write genera el valor devuelto por la función, que es la suma de los dos parámetros.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+  
+          <article id="tab4-5">
+            <div class="">
+              <ul class="tabs2">
+                <li><a href="#tab4-5-1">►</a></li>
+                <li><a href="#tab4-5-2">►</a></li>
+                <li><a href="#tab4-5-3">►</a></li>
+            </ul>
+            </div>
+            <div class="secciones2">
+              <article id="tab4-5-1">
+                <div class="contenedorDeTexto">
+                  <h2>La caja de alerta</h2>
+                  JavaScript ofrece tres tipos de cuadros emergentes, los cuadros <strong>Alert, Prompt, y Confirm.</strong><br><br>
+                  <strong>Cuadro de alerta</strong><br>
+                  Se utiliza un cuadro de alerta cuando desea asegurarse de que la información llegue al usuario. <br>
+                  Cuando aparece un cuadro de alerta, el usuario debe hacer clic en Aceptar para continuar. <br>
+                  La función de alerta toma un solo parámetro, que es el texto que se muestra en el cuadro emergente. <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_alert.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_alert.png" alt=""><br><br>
+                  Para mostrar saltos de línea dentro de un cuadro emergente, use una barra invertida seguida del carácter n. <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_alert2.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/mostrar_alert2.png" alt=""><br><br>
+                  <p>Tenga cuidado al usar cuadros de alerta, ya que el usuario puede continuar usando la página solo después de hacer clic en Aceptar.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-5-2">
+                <div class="contenedorDeTexto">
+                  <h2>Cuadro de aviso</h2>
+                  A menudo se utiliza un cuadro de aviso para que el usuario ingrese un valor antes de ingresar a una página. <br>
+                  Cuando aparece un cuadro de aviso, el usuario tendrá que hacer clic en Aceptar o Cancelar para continuar después de ingresar el valor de entrada. <br>
+                  Si el usuario hace clic en Aceptar, el cuadro devuelve el valor de entrada . Si el usuario hace clic en Cancelar, el cuadro devuelve nulo. <br><br>
+                  <strong>El método prompt () toma dos parámetros.</strong><br> 
+                  - La primera es la etiqueta, que desea mostrar en el cuadro de texto. <br>
+                  - La segunda es una cadena predeterminada para mostrar en el cuadro de texto (opcional). <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_promt.png" alt=""><br><br>
+                  <strong>El mensaje aparece como:</strong><br><br>
+                  <img src="imagenes/mostrar_promt.png" alt=""><br><br>
+                  <p>Cuando aparece un cuadro de aviso, el usuario tendrá que hacer clic en "Aceptar" o "Cancelar" para continuar después de ingresar un valor de entrada. No abuses de este método , ya que evita que el usuario acceda a otras partes de la página hasta que se cierre el cuadro.</p>
+                </div>
+              </article>
+  
+              <article id="tab4-5-3">
+                <div class="contenedorDeTexto">
+                  <h2>Cuadro de confirmación</h2>
+                  Un cuadro de confirmación se usa a menudo para que el usuario verifique o acepte algo. <br>
+                  Cuando aparece un cuadro de confirmación, el usuario debe hacer clic en Aceptar o Cancelar para continuar. <br>
+                  Si el usuario hace clic en Aceptar, el cuadro devuelve verdadero . Si el usuario hace clic en Cancelar, el cuadro devuelve falso. <br><br>
+                  <strong>Ejemplo:</strong><br><br>
+                  <img src="imagenes/ejemplo_confirm.png" alt=""><br><br>
+                  <strong>Resultado:</strong><br><br>
+                  <img src="imagenes/resultado_confirm.png" alt=""><br><br>
+                  <strong>El resultado cuando el usuario hace clic en Aceptar:</strong><br><br>
+                  <img src="imagenes/resultado_confirm_aceptar.png" alt=""><br><br>
+                  <strong>El resultado cuando el usuario hace clic en Cancelar:</strong><br><br>
+                  <img src="imagenes/resultado_confirm_cancelar.png" alt=""><br><br>
+                  <p>No abuse de este método , porque también evita que el usuario acceda a otras partes de la página hasta que se cierre el cuadro.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </article>
+    </div>
+</div>
+</body>
+</html>
