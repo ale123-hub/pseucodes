@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="shourtcut icon" href="LOGO2.ico">
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <main>
+
+    <link rel="stylesheet" type="text/css" href="Estilos_Index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <style>
+        .right{
+            background:rgba(75, 201, 50, 0.74); 
+        }
+        .wrong{
+            background-color:rgba(75, 201, 50, 0.74);
+
+        }
+        .container2{
+            color:  rgb(255, 255, 255);
+        }
+        .containerLetras{
+            color:rgb(255, 255, 255);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg- rgba(0, 49, 139, 0.473);">
+        <a class="navbar-brand" href="Index.html">
+            <h3>
+                <font color="orange"><img src="PCC.png" width="220" height="50"></font>
+                <font color="orange">
+            </h3>
+        </a></font>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">
+                        <font color="orange">Inicio</font><span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Emision.html">
+                        <font color="orange">Tips</font>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font color="orange">
+                            Más Cursos </font>
+                    </a>
+                    </a>
+                    <div class="dropdown-menu" id="navbarDropdown">
+                        <a class="dropdown-item" href="html.html">HTML5</a>
+                        <a class="dropdown-item" href="Indexcss.html">Estilos CSS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Noticias.html">Java Script</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+        </div>
+
+        <li class="nav-item">
+            <a class="nav-link" href="Login.html">
+                <font color="orange">Cerrar Sesión</font>
+            </a>
+        </li>
+        </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <font color="orange">
+            <center>
+                <h2>Test de HTML5</h2>
+                <br>
+            </center>
+        </font>
+    <div class="container2">    
+    <h3>¡Bienvenido a HTML!</h3>
+    <p>HTML son las siglas de H yper T ext M arkup L anguage.
+
+    A diferencia de un lenguaje de programación o de secuencias de comandos que usa secuencias de comandos para realizar funciones, 
+    un lenguaje de marcado usa etiquetas para identificar el contenido.</p>
+    <h3></h3>
+    <p></p>
+</div>
+<div class="containerLetras">  
+    <div class="question"></div>
+    <button onClick="printHTMLQuestion(currentQuestionIndex)">Siguiente Pregunta</button>
+
+    <p>Respuestas Correctas: <span class="rightCounter">0</span></p>
+    <p>Respuestas Incorrectas: <span class="wrongCounter">0</span></p>
+
+    <span class="time">10</span>
+</div>
+    <script>
+let rightAnswer;        
+let currentQuestionIndex = 0;
+let rightAnswers = 0;
+let wrongAnswers = 0;
+let timeInterval;
+let time = 10;
+
+        const cuestionary = [
+            {
+                "question": "¿Qué utiliza un lenguaje de marcado para identificar contenido? ",
+                "answers": ["Etiquetas", "Guiones", "Comandos", "Funciones"]
+            },
+            {
+                "question": "¿Qué significan las siglas HTML? ",
+                "answers": ["Hyper Text Markup Language", "Hyper Tag Mailup Language", "Hyper Tag Media Language", "Hyperlink Text Media Language"]
+            },
+            {
+                "question": "¿Cuál de los siguientes encabezamientos mostrará un texto de mayor tamaño por defecto? ",
+                "answers": ["h1", "h2", "h4", "h3"]
+            },
+            {
+                "question": "¿Qué significa el atributo alt en una imagen? ",
+                "answers": ["Sirve para especificar un texto alternativo para una imagen que no puede mostrarse", "Escribe un texto encima de la imagen para indicar su título", "Es un texto informativo sobre la imagen que no es visible para el usuario", "Muestra de forma alterna la url de otra imagen cuando la primera no se carga"]
+            },
+            {
+                "question": "¿Para qué sirve la declaración <!DOCTYPE> que se escribe al inicio de un documento HTML?",
+                "answers": ["Sirve para que el navegador interprete la versión HTML del documento", "Es la raíz del árbol DOM del que cuelga toda la estructura de etiquetas", "Es la estructura XML de un documento DOC de Word", "Es un comentario que añade el programador sobre el tipo de documento"]
+            },
+            {
+                "question": "¿Qué es cellspadding?",
+                "answers": ["Define el espacio entre el borde de la celda y su contenido", "Define los títulos de una tabla", "Define el espacio entre celdas de una tabla"]
+            },
+            {
+                "question": "El código /u/ sirve para:",
+                "answers": ["Subrayar", "Poner negrita", "Color de fuentea", "Insertar Imagen"]
+            },
+            {
+                "question": "Para editar el codigo Html se puede usar el block de notas",
+                "answers": ["Verdadero", "Falso"]
+            },
+            {
+                "question": "El código < marquee> texto sirve para:",
+                "answers": ["Crear un texto en movimiento horizontal", "Crear un texto en movimiento vertical","Crear un hipervinculo"]
+            },
+            {
+                "question": "El código /title/",
+                "answers": ["Pone el nombre del documento en la barra del título", "Pone el nombre a la barra de herramientas", "Pone el título a la página"]
+            },
+
+        ];
+
+        const printHTMLQuestion = (i) => {
+            currentQuestionIndex++;
+            const q = cuestionary[i];
+            let a = q.answers;
+            rightAnswer = a[0];
+            a = a.sort((a,b) => Math.floor(Math.random() * 3) -2);
+
+
+
+
+            const htmlAnswersArray = a.map( currentA => `<p class="answer"><button onClick="evaluateAnswer('${currentA}', this)">X</button> <span>${currentA}</span></p>`);
+            const htmlAnswers = htmlAnswersArray.join(' ');
+
+
+            let htmlQuestionCode = `<p>${q.question}</p><div>${htmlAnswers}</div>`;
+            document.querySelector('.question').innerHTML = htmlQuestionCode;
+
+            time = 10;
+            clearInterval(timeInterval);
+            document.querySelector('.time').innerHTML = time;
+                        
+            timeInterval = setInterval( ()=> {
+                time--;
+                if(time == -1){
+                    alert ("Has Perdido");
+                    clearInterval(timeInterval);
+                }else{
+                    document.querySelector('.time').innerHTML = time;
+                }
+            },1000)
+
+
+        }
+
+        const evaluateAnswer = (answer, obj) =>{
+            document.querySelectorAll('.answer').forEach( a  => a.classList.remove('right','wrong'))
+
+            const parentP = obj.parentNode;
+
+            console.log('answer: '+ answer + ',rightAnswer: ' + rightAnswer)
+            if (answer == rightAnswer){   
+                parentP.classList.add('right');
+                rightAnswers++;
+                document.querySelector('.rightCounter').innerHTML = rightAnswers;
+            }else {
+                parentP.classList.add('wrong');
+                wrongAnswers++;
+                document.querySelector('.wrongCounter').innerHTML = wrongAnswers;
+            }     
+        }
+
+        const nextQuestion = _ => {
+            
+        }
+
+        printHTMLQuestion(currentQuestionIndex);
+
+    </script>
+</body>
+
+</html>
